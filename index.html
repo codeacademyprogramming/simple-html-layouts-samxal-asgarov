@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+    <style>
+      /* 
+        Stylesheet types cascade result 
+        1. User stylesheets
+        2. Author stylesheet
+        3. User agent stylesheet
+      */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .heading {
+        /* color: rgb(255, 255, 255); */
+        /* hex color - first two numbers are for red */
+        /* hex color - second two numbers are for green */
+        /* hex color - third two numbers are for blue */
+        /* 0 - 9 , A - F */
+
+        /* color: #000; */
+        /* RGBA - Alpha value can only be in interval of 0 and 1 */
+        /* color: rgba(255, 255, 255, 0.1); */
+        /* background-color: black; */
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .division {
+        box-sizing: border-box;
+        height: 300px;
+        width: 500px;
+        background-color: pink;
+        padding: 20px;
+        margin: 150px;
+        border-color: black;
+        border-width: 10px;
+        border-style: solid;
+      }
+
+      div {
+        background-color: red;
+        width: 200px;
+        /* margin-bottom: 50px; */
+        /* margin-top: 50px; */
+      }
+
+      span {
+        display: block;
+        width: 100px;
+        height: 100px;
+        /* margin-top: 50px; */
+        /* margin-bottom: 50px; */
+        /* margin-left: 100px; */
+        /* margin-right: 100px; */
+      }
+
+      a {
+        display: inline-block;
+        width: 200px;
+        margin: 50px; /* applies for 4 sides */
+        margin-top: 50px; /* applies for only top*/
+        margin-right: 100px; /* applies for only right*/
+        margin-bottom: 150px; /* applies for only bottom*/
+        margin-left: 200px; /* applies for only left*/
+        margin: 50px 100px 150px 200px; /* applies in clockwise */
+        margin: 50px 150px; /* margintop marginbottom 50, marginleft marginright 150 */
+        margin: 150px 50px 200px; /* first value is for top, second value is for left and right, third value is for bottom */
+        padding: 50px;
+        padding: 10px 20px;
+        padding: 15px 30px 20px;
+        padding: 10px 11px 10px 30px;
+        display: none;
+      }
+    </style>
+    <title>CSS Box model</title>
+  </head>
+  <body>
+    <!-- <h1 class="heading">Hello world</h1> -->
+    <!-- <div style="background-color: red">
+      <div class="division">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eius.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iste
+        corporis? Deserunt inventore tenetur laudantium repellat nobis ut
+        repudiandae est?
+      </div>
+    </div> -->
+    <!-- <div>Goodbye world</div> -->
+    <!-- <span>Hello world</span> -->
+    <!-- <span>Hello world2</span> -->
+    <!-- <p>Hello world</p> -->
+
+    <!-- 
+      Inline elements - its all area is decided by its content
+        inline elements:
+          1. can not have width and height
+          2. can not have margin top and margin bottom
+          3. can have paddings
+
+      Block elements - width is by default 100%
+        block elements:
+          1. can have width and height
+          2. can have margin on any side
+          3. can have paddings
+
+      Inline block - 
+          1. can have width, height - comes from blockness
+          2. can have margin on any side - comes from blockness
+          3. can let other elements to be side by side - comes from inlineness
+    -->
+
+    <div>Hello world</div>
+    <span>Hello world </span>
+    <span style="color: red">Hello world</span>
+    <div>----------------</div>
+    <a href="https://google.com">Google link</a>
+    <a href="https://fb.com">Fb link</a>
+  </body>
+</html>
